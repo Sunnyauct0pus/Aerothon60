@@ -77,11 +77,28 @@ def read_img(file_path):
 
 model = load_model('defect_aerothon_final.h5')
 
+# def detect_fault(image):
+#     scal = scale_resize_image(image)
+#     pred = prediction (scal, model)
+#     # print('Model has identified {0} in Aircraft with {1} % confidence'.format(pred[0],pred[1]))
+#     description = 'Model has identified {0} in Aircraft with {1} % confidence'.format(pred[0],pred[1])
+#     return description
+
+
 def detect_fault(image):
     scal = scale_resize_image(image)
     pred = prediction (scal, model)
     # print('Model has identified {0} in Aircraft with {1} % confidence'.format(pred[0],pred[1]))
-    description = 'Model has identified {0} in Aircraft with {1} % confidence'.format(pred[0],pred[1])
+    confidence = pred[1]
+    if confidence >= 85:
+        problem_level = 'High problem. Repair rework as to be followed along with recalculation of factor of safety of the components using analytical and FEM methods. The reserve factor should be greater than 1 after the component has absorbed the impact from dent.'
+    elif 70 <= confidence < 85:
+        problem_level = 'Intermediate problem. The dent should be given a smooth contour through machining process to match the contour of the actual component without damaging the part.'
+    else:
+        problem_level = 'Low problem. Therefore, No repair necessary. The dent is acceptable without any repair.'
+        
+    # description = 'Model has identified {0} in Aircraft with {1} % confidence'.format(pred[0],pred[1])
+    description = 'Model has identified {0} in Aircraft with {1:.2f}% confidence ({2})'.format(pred[0], confidence, problem_level)
     return description
 
 

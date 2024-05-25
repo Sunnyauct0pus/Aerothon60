@@ -7,10 +7,16 @@ tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 model2=load_model('section_finalll.h5')# change model location
 
+# def scale_resize_image(image):
+#     image = tf.image.convert_image_dtype(image, tf.float32)
+#     image = tf.image.resize(image, (128,128))
+#     image /= 255.0
+#     image = np.expand_dims(image, axis=0)
+#     return (image)
 def scale_resize_image(image):
-    image = tf.image.convert_image_dtype(image, tf.float32)
-    image = tf.image.resize(image, (128,128))
-    image /= 255.0
+    image = tf.image.convert_image_dtype(image, tf.float32) 
+    image = tf.image.resize(image, (64,64)) 
+    image=image/255.0
     image = np.expand_dims(image, axis=0)
     return (image)
 
