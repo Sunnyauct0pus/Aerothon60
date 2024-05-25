@@ -32,8 +32,8 @@ The Aircraft Fault Detection application allows users to upload aircraft images 
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/aircraft-fault-detection.git
-   cd aircraft-fault-detection
+   git clone https://github.com/ayushkwal/Aerothon60.git
+   cd Aerothon60
 
 2. **Set up a virtual environment:**
    ```bash
