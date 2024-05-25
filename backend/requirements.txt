@@ -1,0 +1,4 @@
+Flask
+flask-cors
+pillow
+# Add other dependencies like tensorflow, torch, etc.
