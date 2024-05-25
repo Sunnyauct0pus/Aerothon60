@@ -30,10 +30,12 @@ def handle_file_upload(request, detection_function):
         return jsonify({'error': str(e)}), 500
 
 @app.route('/detect', methods=['POST'])
+@cross_origin(origins='https://aerothon60.vercel.app')
 def detect_fault():
     return handle_file_upload(request, model.detect_fault)
 
 @app.route('/detect2', methods=['POST'])
+@cross_origin(origins='https://aerothon60.vercel.app')
 def detect_fault2():
     return handle_file_upload(request, model2.detect_fault2)
 
