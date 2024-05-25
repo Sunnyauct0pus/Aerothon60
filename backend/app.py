@@ -9,7 +9,7 @@ env = "prod"
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "https://aerothon60.vercel.app"}})
 
 def handle_file_upload(request, detection_function):
     if 'file' not in request.files:
