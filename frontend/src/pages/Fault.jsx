@@ -8,28 +8,35 @@ const Fault = () => {
 
   const handleImageUpload = async (image) => {
     setImageData(image);
-
+  
     const formData = new FormData();
     formData.append('file', image);
-
+  
     try {
       const response = await fetch('http://localhost:5000/detect', {
         method: 'POST',
         body: formData,
       });
-
+  
+      if (!response.ok) {
+        throw new Error(`Server error: ${response.statusText}`);
+      }
+  
       const result = await response.json();
-
+  
       if (result.description) {
         setDescription(result.description);
+      } else if (result.error) {
+        setDescription(`Error: ${result.error}`);
       } else {
-        setDescription('No fault detected or an error occurred.');
+        setDescription('No fault detected.');
       }
     } catch (error) {
       console.error('Error:', error);
       setDescription('Error: Could not connect to the server.');
     }
   };
+  
 
   return (
     <div style={styles.fault}>
