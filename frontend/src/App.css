@@ -26,17 +26,18 @@
 }
 
 .image-upload {
-  margin-bottom: 2rem;
+  border: 1px solid #f2f2f2;
 }
 
 .image-upload form {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .image-upload input[type="file"] {
-  margin-bottom: 1rem;
+  
 }
 
 .image-upload button {

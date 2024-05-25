@@ -7,6 +7,8 @@ const Navbar = () => {
       <div style={styles.logo}>FDS</div>
       <div style={styles.navLinks}>
         <Link to="/" style={styles.link}>Home</Link>
+        <Link to="/fault"  style={styles.link}>Fault Analyzer</Link>
+        <Link to="/region" style={styles.link}>Defect Region Detector</Link>
         <Link style={styles.link}>About Us</Link>
         <Link style={styles.link}>Contact Us</Link>
       </div>

@@ -14,7 +14,6 @@ const styles = {
     color: 'white',
     textAlign: 'center',
     padding: '1px 0',
-    position: 'absolute',
     bottom: '0',
     width: '100%',
   }

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ImageUpload from '../components/ImageUpload';
 import fault from '../fault2.jpg';
 
-const Fault = () => {
+const Region = () => {
   const [imageData, setImageData] = useState(null);
   const [description, setDescription] = useState('');
 
@@ -13,7 +13,7 @@ const Fault = () => {
     formData.append('file', image);
 
     try {
-      const response = await fetch('http://localhost:5000/detect', {
+      const response = await fetch('http://localhost:5000/detect2', {
         method: 'POST',
         body: formData,
       });
@@ -112,4 +112,4 @@ const styles = {
   },
 };
 
-export default Fault;
+export default Region;
