@@ -72,6 +72,12 @@ The frontend will be running on http://localhost:3000.
 - Upload an image of an aircraft.
 - View the fault detection result displayed on the page.
 
+## Snapshots
+-HomePage
+![image](https://github.com/ayushkwal/Aerothon60/assets/70058068/8558ff25-9470-46a7-b769-fdd9315ab798)
+
+-Model1(Predict the confident level of damage)
+![image](https://github.com/ayushkwal/Aerothon60/assets/70058068/42409a30-6325-4893-a234-49aaeb818c8e)
 
 
    
