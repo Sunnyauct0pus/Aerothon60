@@ -75,12 +75,11 @@ The frontend will be running on http://localhost:3000.
 ## Snapshots
 -HomePage(Desktop View)
 ![image](https://github.com/ayushkwal/Aerothon60/assets/70058068/8558ff25-9470-46a7-b769-fdd9315ab798)
--HomePage(Mobile View)
-<img width="200" alt="image" src="https://github.com/ayushkwal/Aerothon60/assets/70058068/46936ed4-d6bd-4e18-b94f-02aa4ddeba69">
 
 
 -Model1(Fault Detection)
-<img width="950" alt="image" src="https://github.com/ayushkwal/Aerothon60/assets/70058068/5e8d30c0-604d-43d1-b74b-2882b60b8251">
+<img width="944" alt="image" src="https://github.com/ayushkwal/Aerothon60/assets/70058068/3f3cad70-7c91-454b-9c52-080353048fff">
+
 
 
 
