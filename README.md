@@ -73,11 +73,15 @@ The frontend will be running on http://localhost:3000.
 - View the fault detection result displayed on the page.
 
 ## Snapshots
--HomePage
+-HomePage(Desktop View)
 ![image](https://github.com/ayushkwal/Aerothon60/assets/70058068/8558ff25-9470-46a7-b769-fdd9315ab798)
+-HomePage(Mobile View)
+<img width="200" alt="image" src="https://github.com/ayushkwal/Aerothon60/assets/70058068/46936ed4-d6bd-4e18-b94f-02aa4ddeba69">
 
--Model1(Predict the confident level of damage)
-![image](https://github.com/ayushkwal/Aerothon60/assets/70058068/42409a30-6325-4893-a234-49aaeb818c8e)
+
+-Model1(Fault Detection)
+<img width="950" alt="image" src="https://github.com/ayushkwal/Aerothon60/assets/70058068/5e8d30c0-604d-43d1-b74b-2882b60b8251">
+
 
 
    
